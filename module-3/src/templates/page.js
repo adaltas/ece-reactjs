@@ -1,38 +1,18 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
-import { css } from "glamor"
-
-const styles = {
-  buttonContainer: {
-    maxWidth: "800px",
-    margin: "0 auto",
-    position: "relative",
-    "> div": {
-      position: "absolute",
-      textAlign: "right",
-      width: "100%",
-      top: "1.5rem",
-      " a": {
-        marginLeft: ".5rem",
-        cursor: "pointer",
-      },
-      " img": {
-        width: "2rem",
-      },
-    },
-  },
-}
 
 export default function Template({ data }) {
-  const { markdownRemark } = data
-  const { frontmatter, html, fields } = markdownRemark
-  
+  const { markdownRemark } = data // data.markdownRemark holds our post data
+  const { frontmatter, html } = markdownRemark
+
 
   return (
-    <Layout page={{ ...frontmatter, ...fields }}>
+    <Layout page={{ ...frontmatter }}>
       <section>
-        <div dangerouslySetInnerHTML={{ __html: html }} />
+        <div>
+          <div dangerouslySetInnerHTML={{ __html: html }} />
+        </div>
       </section>
     </Layout>
   )

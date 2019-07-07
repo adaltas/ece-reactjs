@@ -43,7 +43,7 @@ a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
   text-decoration: none;
-  color: #55198b;
+  color: #fff;
 }
 a:active,
 a:hover {
@@ -267,14 +267,14 @@ hgroup {
   margin-bottom: 1.45rem;
 }
 ul {
-  margin-left: 1.45rem;
+  margin-left: 0;
   margin-right: 0;
   margin-top: 0;
   padding-bottom: 0;
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
+  margin-bottom: 0;
   list-style-position: outside;
   list-style-image: none;
 }
@@ -528,5 +528,38 @@ pre tt:after {
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;
+  }
+}
+
+/* Custom */
+
+section {
+  color: #666;
+  font-size: 1.1rem;
+  padding: 2rem 1rem;
+}
+
+section:nth-child(odd) {
+  background: #f2f2f2;
+}
+
+section:nth-child(even) {
+  background: #e3e3e3;
+}
+
+section h2 {
+  font-weight: normal;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+section > div {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 960px) {
+  section > div {
+    /*padding: 2rem 1rem;*/
   }
 }

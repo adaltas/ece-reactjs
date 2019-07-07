@@ -1,23 +1,21 @@
 {
-  "name": "gatsby-module-3",
-  "description": "Introduction to Gatsby",
-  "keywords": [
-    "gatsby"
-  ],
-  "version": "1.0.0",
+  "name": "ece-reactjs-module-3",
+  "description": "Gatsby static website",
+  "version": "0.0.0",
+  "author": "Sergei Kudinov <sergei@adaltas.com>",
+  "dependencies": {
+    "gatsby": "^2.5.5",
+    "gatsby-source-filesystem": "^2.0.36",
+    "gatsby-transformer-remark": "^2.3.12",
+    "glamor": "^2.20.40",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "typeface-roboto": "0.0.54"
+  },
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
     "start": "npm run develop",
     "serve": "gatsby serve"
-  },
-  "dependencies": {
-    "gatsby": "^2.9.11",
-    "gatsby-source-filesystem": "^2.1.0",
-    "glamor": "^2.20.40",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
-  },
-  "author": "Sergei Kudinov",
-  "license": "ISC"
+  }
 }

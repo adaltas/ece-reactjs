@@ -1,14 +1,11 @@
 ---
 path: /changelog
 title: Changelog
+sort: 200
 ---
 
 # Changelog
 
-## v1.0.3
-
-* readme: multiple updates
-* package: set homepage
 
 ## v1.0.2
 
@@ -22,4 +19,4 @@ title: Changelog
 ## v1.0.0
 
 * package: dependencies with caret
-* src: size < str.length and new option strip
+* src: size < str.length and new option strip fix #5

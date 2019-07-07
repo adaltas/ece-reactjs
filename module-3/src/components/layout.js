@@ -4,22 +4,14 @@ import Header from "./header"
 import Footer from "./footer"
 import "./layout.css"
 
-import { css } from "glamor"
 
 class Layout extends Component {
   render() {
     const { props } = this
-    const { children, data, page } = props
-
-    const pages = data.pages.edges.map(page => {
-      return { ...page.node.fields, ...page.node.frontmatter }
-    })
-
+    const { children } = props
     return (
         <>
-          <Header
-            siteTitle={data.site.siteMetadata.title}
-          />
+          <Header/>
           <main>
             {children}
           </main>

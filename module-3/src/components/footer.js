@@ -1,4 +1,3 @@
-import { Link } from "gatsby"
 import React from "react"
 import { css } from "glamor"
 
@@ -21,7 +20,6 @@ const styles = {
       margin: "1.5rem 0 1rem 0",
       fontWeight: "normal",
       fontSize: "1.4rem",
-      // textAlign: 'left',
     },
     "& ul, & p": {
       margin: "0 0 0 0",
@@ -34,35 +32,14 @@ const styles = {
     "& a": {
       textDecoration: "none",
       color: "white",
-      // ':hover': {
-      //   color: '#34BF1C',
-      // },
     },
     "& p a": {
       textDecoration: "underline",
     },
   },
-  navigate: {
-    // width: '25%',
-    flex: "1",
-    "@media (max-width: 960px)": {
-      // width: '50%',
-      flex: "0 0 50%",
-    },
-  },
-  contribute: {
-    // width: '25%',
-    flex: "1",
-    "@media (max-width: 960px)": {
-      // width: '50%',
-      flex: "0 0 50%",
-    },
-  },
   about: {
-    // width: '100%',
     flex: "2",
     "@media (max-width: 960px)": {
-      // width: '100%',
       flex: "0 0 100%",
     },
   },
@@ -71,7 +48,12 @@ const styles = {
 const Footer = () => (
   <footer className={css(styles.root)}>
     <div className={css(styles.container)}>
-      <p>© Copiright</p>
+      <div className={css(styles.about)}>
+        <h2>About</h2>
+        <p>
+          This is a Gatsby static website.
+        </p>
+      </div>
     </div>
   </footer>
 )

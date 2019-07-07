@@ -1,12 +1,6 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.org/docs/gatsby-config/
- */
-
 module.exports = {
   siteMetadata: {
-    title: `The title`,
+    title: `Gatsby website`,
   },
   plugins: [
     {
@@ -14,6 +8,13 @@ module.exports = {
       options: {
         path: `${__dirname}/src/md`,
         name: "markdown-pages",
+      },
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+        ],
       },
     },
   ],
