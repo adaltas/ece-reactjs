@@ -43,6 +43,8 @@ a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
   text-decoration: none;
+}
+header a {
   color: #fff;
 }
 a:active,

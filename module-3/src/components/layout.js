@@ -35,6 +35,7 @@ const WrappedLayout = props => (
         ) {
           edges {
             node {
+              html
               frontmatter {
                 title
               }
